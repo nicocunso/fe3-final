@@ -54,12 +54,12 @@ const Form = () => {
     <div>
       <form onSubmit={handleSubmit}>
       <div>
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre: </label>
         <input type="text" name="nombre" placeholder="nombre" value={formData.nombre} onChange={handleChange}/>
         {errores.nombre && <p style={{ color: 'red' }}>{errores.nombre}</p> }
       </div>
       <div>
-        <label for="email">Email:</label>
+        <label for="email">Email: </label>
         <input type="email" name="email" placeholder="email" value={formData.email} onChange={handleChange}/>
         {errores.email && <p style={{ color: 'red' }}>{errores.email}</p>}
       </div>

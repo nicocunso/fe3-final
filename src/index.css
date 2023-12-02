@@ -14,20 +14,28 @@ code {
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
+  margin: 3px;
   border: none;
+  border-radius: 10px;
   width: 100%;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
-
+.favButton:hover{
+  
+  background-color: rgba(19, 15, 233, 0.39);
+  
+}
 h1{
   text-align: center;
 }
 
 nav{
   display: flex;
-  width: 80vw;
+  width: auto;
   justify-content: flex-start;
   padding: 1rem;
+  
 }
 
 a{
@@ -37,7 +45,7 @@ a{
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
+  color: rgb(136, 136, 136)
 } 
 
 footer {
@@ -47,9 +55,10 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: auto;
   height: 40px;
-  margin-top: 2rem;
+  border-top: 10px solid rgb(7, 6, 6);
+  
 }
 
 footer > img{
@@ -62,26 +71,38 @@ footer > p{
 }
 
 form{
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 300px;
   margin: 0 auto;
+  
 }
+
+
 
 .card{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  border-radius: 10px;
+  transition: all 0.5s ;
+}
+
+.card img{
+  height: auto;
+  width: 100%;
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(142, 202, 217);
+  background-color: rgb(142, 206, 217);
 }
 
 .card-grid{
